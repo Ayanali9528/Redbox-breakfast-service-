@@ -109,14 +109,18 @@ const Plans = () => (
               </ul>
 
               <a
-                href="#contact"
+                href={`https://wa.me/919528328181?text=${encodeURIComponent(
+                  `Hi RedBox, I'd like to start the ${p.name} (${p.price} for ${p.unit}).`
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`block text-center w-full py-3.5 rounded-full font-semibold transition-smooth ${
                   isPopular
                     ? "bg-warm text-primary-foreground hover:opacity-90 shadow-glow"
                     : "bg-foreground text-background hover:opacity-90"
                 }`}
               >
-                Start {p.name.split(" ")[0]} →
+                Start {p.name.split(" ")[0]} on WhatsApp →
               </a>
             </div>
           );
