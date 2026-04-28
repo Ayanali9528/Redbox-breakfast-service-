@@ -16,40 +16,40 @@
     --popover: 0 0% 100%;
     --popover-foreground: 150 25% 12%;
 
-    /* Vibrant orange */
-    --primary: 22 95% 56%;
-    --primary-foreground: 38 50% 98%;
-    --primary-glow: 30 100% 65%;
+    /* Light red / coral */
+    --primary: 4 78% 58%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 8 90% 70%;
 
-    /* Leafy green */
-    --secondary: 140 55% 32%;
-    --secondary-foreground: 38 50% 98%;
-    --secondary-soft: 130 40% 94%;
+    /* Soft red accent */
+    --secondary: 354 70% 54%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-soft: 6 80% 96%;
 
     --muted: 38 30% 94%;
     --muted-foreground: 150 12% 38%;
 
-    --accent: 140 55% 32%;
-    --accent-foreground: 38 50% 98%;
+    --accent: 4 78% 58%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 38 25% 88%;
-    --input: 38 25% 88%;
-    --ring: 22 95% 56%;
+    --border: 6 40% 90%;
+    --input: 6 40% 90%;
+    --ring: 4 78% 58%;
 
     --radius: 1.25rem;
 
     /* Brand gradients & shadows */
-    --gradient-warm: linear-gradient(135deg, hsl(22 95% 56%), hsl(35 100% 62%));
-    --gradient-fresh: linear-gradient(135deg, hsl(140 55% 32%), hsl(155 50% 42%));
-    --gradient-sunrise: radial-gradient(ellipse at top right, hsl(30 100% 88% / 0.7), transparent 60%),
-                        radial-gradient(ellipse at bottom left, hsl(130 55% 88% / 0.6), transparent 60%);
+    --gradient-warm: linear-gradient(135deg, hsl(4 78% 58%), hsl(12 90% 68%));
+    --gradient-fresh: linear-gradient(135deg, hsl(354 70% 54%), hsl(8 85% 65%));
+    --gradient-sunrise: radial-gradient(ellipse at top right, hsl(8 100% 92% / 0.85), transparent 60%),
+                        radial-gradient(ellipse at bottom left, hsl(6 90% 94% / 0.7), transparent 60%);
 
-    --shadow-soft: 0 10px 30px -12px hsl(22 60% 30% / 0.18);
-    --shadow-glow: 0 20px 50px -16px hsl(22 95% 56% / 0.45);
-    --shadow-fresh: 0 20px 50px -16px hsl(140 55% 32% / 0.35);
+    --shadow-soft: 0 10px 30px -12px hsl(4 60% 40% / 0.18);
+    --shadow-glow: 0 20px 50px -16px hsl(4 78% 58% / 0.45);
+    --shadow-fresh: 0 20px 50px -16px hsl(354 70% 54% / 0.35);
 
     --transition-smooth: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -94,9 +94,9 @@
   50% { transform: translateY(-8px); }
 }
 @keyframes pulse-ring {
-  0% { box-shadow: 0 0 0 0 hsl(140 55% 40% / 0.5); }
-  70% { box-shadow: 0 0 0 18px hsl(140 55% 40% / 0); }
-  100% { box-shadow: 0 0 0 0 hsl(140 55% 40% / 0); }
+  0% { box-shadow: 0 0 0 0 hsl(4 78% 58% / 0.5); }
+  70% { box-shadow: 0 0 0 18px hsl(4 78% 58% / 0); }
+  100% { box-shadow: 0 0 0 0 hsl(4 78% 58% / 0); }
 }
 .animate-float { animation: float 4s ease-in-out infinite; }
 .animate-pulse-ring { animation: pulse-ring 2s infinite; }
