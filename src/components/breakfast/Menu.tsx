@@ -51,9 +51,9 @@ const Menu = () => (
         <p className="text-muted-foreground max-w-md">Every box packs <strong className="text-foreground">2 units</strong> — two parathas, two eggs, two pooris — because half-portions never fix hunger.</p>
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
         {items.map((item) => (
-          <div key={item.name} className="group bg-card rounded-3xl overflow-hidden border border-border shadow-soft hover:shadow-glow transition-smooth hover:-translate-y-1">
+          <div key={item.name} className="group bg-card rounded-2xl sm:rounded-3xl overflow-hidden border border-border shadow-soft hover:shadow-glow transition-smooth hover:-translate-y-1">
             <div className="aspect-square overflow-hidden bg-muted">
               <img
                 src={item.img}
@@ -64,14 +64,14 @@ const Menu = () => (
                 className="w-full h-full object-cover group-hover:scale-105 transition-smooth"
               />
             </div>
-            <div className="p-5">
-              <div className="flex items-center justify-between mb-1">
-                <h4 className="font-display text-lg font-bold">{item.name}</h4>
-                <span className="text-primary font-bold">{item.price}</span>
+            <div className="p-3 sm:p-5">
+              <div className="flex items-center justify-between gap-2 mb-1">
+                <h4 className="font-display text-sm sm:text-lg font-bold leading-tight">{item.name}</h4>
+                <span className="text-primary font-bold text-sm sm:text-base shrink-0">{item.price}</span>
               </div>
-              <p className="text-xs text-muted-foreground">{item.desc}</p>
-              <span className="inline-block mt-3 text-[10px] font-bold uppercase tracking-wider text-secondary bg-secondary-soft px-2 py-1 rounded-full">
-                Double Unit Box
+              <p className="text-[11px] sm:text-xs text-muted-foreground line-clamp-2">{item.desc}</p>
+              <span className="inline-block mt-2 sm:mt-3 text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-secondary bg-secondary-soft px-2 py-1 rounded-full">
+                Double Unit
               </span>
             </div>
           </div>
