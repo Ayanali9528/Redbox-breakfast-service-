@@ -5,17 +5,17 @@ import poori from "@/assets/menu-poori.jpg";
 import idli from "@/assets/menu-idli.jpg";
 
 const items = [
-  { name: "Aloo Paratha with Chai", desc: "2 stuffed aloo parathas + hot masala chai", img: parathas, price: "₹59" },
-  { name: "Paneer Paratha with Chai", desc: "2 paneer parathas + butter & chai", img: parathas, price: "₹69" },
+  { name: "Aloo Paratha with Chai", desc: "2 stuffed aloo parathas + hot masala chai", img: parathas, price: "₹49" },
+  { name: "Paneer Paratha with Chai", desc: "2 paneer parathas + butter & chai", img: parathas, price: "₹49" },
   { name: "Oats with Milk", desc: "Wholesome oats + fresh fruits & milk", img: idli, price: "₹49" },
   { name: "Daliya with Milk", desc: "Warm daliya bowl + nuts & milk", img: idli, price: "₹49" },
-  { name: "Sandwich", desc: "Grilled veg sandwich + tomato ketchup", img: poori, price: "₹55" },
-  { name: "Omelette with Matri", desc: "Fluffy omelette + crispy matris", img: eggs, price: "₹65" },
-  { name: "Plain Paratha + Anda Bhurji", desc: "2 parathas + spicy anda bhurji", img: eggs, price: "₹69" },
+  { name: "Sandwich", desc: "Grilled veg sandwich + tomato ketchup", img: poori, price: "₹49" },
+  { name: "Omelette with Matri", desc: "Fluffy omelette + crispy matris", img: eggs, price: "₹49" },
+  { name: "Plain Paratha + Anda Bhurji", desc: "2 parathas + spicy anda bhurji", img: eggs, price: "₹49" },
   { name: "Curd Toast with Chai", desc: "Curd-topped toast + masala chai", img: poori, price: "₹49" },
-  { name: "Bread Pakora with Chai", desc: "2 bread pakoras + chutney & chai", img: poori, price: "₹55" },
-  { name: "Boiled Egg, Banana & Milk", desc: "2 boiled eggs + banana + glass of milk", img: eggs, price: "₹59" },
-  { name: "Anda in a Hole + Chai", desc: "Egg-in-bread classic + masala chai", img: eggs, price: "₹59" },
+  { name: "Bread Pakora with Chai", desc: "2 bread pakoras + chutney & chai", img: poori, price: "₹49" },
+  { name: "Boiled Egg, Banana & Milk", desc: "2 boiled eggs + banana + glass of milk", img: eggs, price: "₹49" },
+  { name: "Anda in a Hole + Chai", desc: "Egg-in-bread classic + masala chai", img: eggs, price: "₹49" },
 ];
 
 const usps = [
