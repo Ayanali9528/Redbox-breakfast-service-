@@ -5,7 +5,7 @@ const Navbar = () => (
     <nav className="container flex items-center justify-between h-16">
       <a href="#" className="flex items-center gap-2 font-display text-xl font-bold">
         <img src={logo} alt="Red Dabba logo" className="w-10 h-10 rounded-full object-cover" />
-        Red<span className="text-primary">Box</span>
+        Red<span className="text-primary"> Dabba</span>
       </a>
       <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
         <a href="#plans" className="hover:text-foreground transition-smooth">Plans</a>
