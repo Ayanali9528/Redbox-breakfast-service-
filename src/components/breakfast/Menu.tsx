@@ -1,21 +1,28 @@
 import { ShieldCheck, Wallet, Zap } from "lucide-react";
-import parathas from "@/assets/menu-parathas.jpg";
-import eggs from "@/assets/menu-eggs.jpg";
-import poori from "@/assets/menu-poori.jpg";
-import idli from "@/assets/menu-idli.jpg";
+import alooParatha from "@/assets/menu/aloo-paratha.jpeg";
+import paneerParatha from "@/assets/menu/paneer-paratha.jpeg";
+import oatsMilk from "@/assets/menu/oats-milk.jpeg";
+import daliyaMilk from "@/assets/menu/daliya-milk.jpeg";
+import sandwich from "@/assets/menu/sandwich.png";
+import omeletteMatri from "@/assets/menu/omelette-matri.jpeg";
+import parathaBhurji from "@/assets/menu/paratha-bhurji.png";
+import curdToast from "@/assets/menu/curd-toast.png";
+import breadPakoda from "@/assets/menu/curd-toast.png";
+import eggBanana from "@/assets/menu/egg-banana.png";
+import omeletteBread from "@/assets/menu/omelette-bread.png";
 
 const items = [
-  { name: "Aloo Paratha with Chai", desc: "2 stuffed aloo parathas + hot masala chai", img: parathas, price: "₹49" },
-  { name: "Paneer Paratha with Chai", desc: "2 paneer parathas + butter & chai", img: parathas, price: "₹49" },
-  { name: "Oats with Milk", desc: "Wholesome oats + fresh fruits & milk", img: idli, price: "₹49" },
-  { name: "Daliya with Milk", desc: "Warm daliya bowl + nuts & milk", img: idli, price: "₹49" },
-  { name: "Sandwich", desc: "Grilled veg sandwich + tomato ketchup", img: poori, price: "₹49" },
-  { name: "Omelette with Matri", desc: "Fluffy omelette + crispy matris", img: eggs, price: "₹49" },
-  { name: "Plain Paratha + Anda Bhurji", desc: "2 parathas + spicy anda bhurji", img: eggs, price: "₹49" },
-  { name: "Curd Toast with Chai", desc: "Curd-topped toast + masala chai", img: poori, price: "₹49" },
-  { name: "Bread Pakora with Chai", desc: "2 bread pakoras + chutney & chai", img: poori, price: "₹49" },
-  { name: "Boiled Egg, Banana & Milk", desc: "2 boiled eggs + banana + glass of milk", img: eggs, price: "₹49" },
-  { name: "Anda in a Hole + Chai", desc: "Egg-in-bread classic + masala chai", img: eggs, price: "₹49" },
+  { name: "Aloo Paratha with Chai", desc: "2 stuffed aloo parathas + hot masala chai", img: alooParatha, price: "₹49" },
+  { name: "Paneer Paratha with Chai", desc: "2 paneer parathas + butter & chai", img: paneerParatha, price: "₹49" },
+  { name: "Oats with Milk", desc: "Wholesome oats + fresh fruits & milk", img: oatsMilk, price: "₹49" },
+  { name: "Daliya with Milk", desc: "Warm daliya bowl + nuts & milk", img: daliyaMilk, price: "₹49" },
+  { name: "Sandwich", desc: "Grilled veg sandwich + tomato ketchup", img: sandwich, price: "₹49" },
+  { name: "Omelette with Matri", desc: "Fluffy omelette + crispy matris", img: omeletteMatri, price: "₹49" },
+  { name: "Plain Paratha + Anda Bhurji", desc: "2 parathas + spicy anda bhurji", img: parathaBhurji, price: "₹49" },
+  { name: "Curd Toast with Chai", desc: "Curd-topped toast + masala chai", img: curdToast, price: "₹49" },
+  { name: "Bread Pakoda", desc: "2 bread pakoras + chutney & chai", img: breadPakoda, price: "₹49" },
+  { name: "Boiled Egg & Banana with Milk", desc: "2 boiled eggs + banana + glass of milk", img: eggBanana, price: "₹49" },
+  { name: "Omelette with Bread & Chai", desc: "Egg-in-bread classic + masala chai", img: omeletteBread, price: "₹49" },
 ];
 
 const usps = [
@@ -27,16 +34,16 @@ const usps = [
 const Menu = () => (
   <section id="menu" className="py-20 lg:py-28 bg-muted/40">
     <div className="container">
-      <div className="grid md:grid-cols-3 gap-6 mb-20">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-20">
         {usps.map(({ icon: Icon, title, desc, tone }) => (
-          <div key={title} className="bg-card rounded-3xl p-7 border border-border shadow-soft">
-            <div className={`w-14 h-14 rounded-2xl grid place-items-center mb-5 ${
+          <div key={title} className="bg-card rounded-3xl p-5 sm:p-7 border border-border shadow-soft">
+            <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-2xl grid place-items-center mb-4 sm:mb-5 ${
               tone === "primary" ? "bg-warm text-primary-foreground shadow-glow" : "bg-fresh text-secondary-foreground shadow-fresh"
             }`}>
-              <Icon className="w-7 h-7" />
+              <Icon className="w-6 h-6 sm:w-7 sm:h-7" />
             </div>
-            <h3 className="font-display text-xl font-bold mb-2">{title}</h3>
-            <p className="text-sm text-muted-foreground leading-relaxed">{desc}</p>
+            <h3 className="font-display text-lg sm:text-xl font-bold mb-2">{title}</h3>
+            <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">{desc}</p>
           </div>
         ))}
       </div>

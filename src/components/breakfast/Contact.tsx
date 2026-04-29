@@ -23,7 +23,7 @@ const Contact = () => (
         {[
           { icon: Phone, label: "Call us", value: "+91 95283 28181" },
           { icon: Mail, label: "Email", value: "Ayanali753366@gmail.com" },
-          { icon: MapPin, label: "Location", value: "Shahnshahbad, Jamalpur, Gali No 9, Aligarh" },
+          { icon: MapPin, label: "Location", value: "Shahanshahbad, Jamalpur, Aligarh" },
           { icon: MessageCircle, label: "WhatsApp", value: "+91 95283 28181" },
         ].map(({ icon: Icon, label, value }) => (
           <div key={label} className="bg-background/10 backdrop-blur rounded-2xl p-5 border border-background/20">
