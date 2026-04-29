@@ -34,15 +34,6 @@ const Hero = () => (
         <div className="relative rounded-[2.5rem] overflow-hidden shadow-glow border border-border/60 animate-float">
           <img src={hero} alt="Fresh paratha and eggs breakfast plate" width={1920} height={1080} className="w-full h-auto" />
         </div>
-        <div className="absolute -bottom-5 -left-5 bg-card rounded-2xl px-5 py-3 shadow-soft border border-border flex items-center gap-3">
-          <div className="w-10 h-10 rounded-xl bg-secondary-soft grid place-items-center">
-            <span className="text-secondary font-bold">4.9</span>
-          </div>
-          <div className="text-xs">
-            <div className="font-semibold">2,400+ happy mornings</div>
-            <div className="text-muted-foreground">Rated by students & pros</div>
-          </div>
-        </div>
         <div className="absolute -top-4 -right-3 bg-warm text-primary-foreground rounded-2xl px-4 py-3 shadow-glow rotate-3">
           <div className="text-[10px] uppercase tracking-wider opacity-90">Starts at</div>
           <div className="font-display text-2xl font-bold leading-none">₹49<span className="text-xs font-medium">/box</span></div>
