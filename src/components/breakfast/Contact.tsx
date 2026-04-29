@@ -9,7 +9,7 @@ const Contact = () => (
         <p className="opacity-90 max-w-md mb-8">Drop us a WhatsApp with your area & plan choice. We'll confirm in minutes and start delivery the very next morning.</p>
 
         <a
-          href="https://wa.me/919528328181?text=Hi%20RedBox%2C%20I%27d%20like%20to%20start%20a%20breakfast%20plan."
+          href="https://wa.me/919528328181?text=Hi%20Red%20Dabba%2C%20I%27d%20like%20to%20start%20a%20breakfast%20plan."
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 bg-background text-foreground px-7 py-4 rounded-full font-bold shadow-soft hover:scale-[1.02] transition-smooth"
