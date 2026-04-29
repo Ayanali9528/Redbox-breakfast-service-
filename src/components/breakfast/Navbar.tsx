@@ -4,7 +4,7 @@ const Navbar = () => (
   <header className="sticky top-0 z-40 backdrop-blur-md bg-background/80 border-b border-border/60">
     <nav className="container flex items-center justify-between h-16">
       <a href="#" className="flex items-center gap-2 font-display text-xl font-bold">
-        <img src={logo} alt="RedBox Breakfast logo" className="w-10 h-10 rounded-full object-cover" />
+        <img src={logo} alt="Red Dabba logo" className="w-10 h-10 rounded-full object-cover" />
         Red<span className="text-primary">Box</span>
       </a>
       <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">

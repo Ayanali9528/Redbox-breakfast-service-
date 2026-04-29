@@ -110,7 +110,7 @@ const Plans = () => (
 
               <a
                 href={`https://wa.me/919528328181?text=${encodeURIComponent(
-                  `Hi RedBox, I'd like to start the ${p.name} (${p.price} for ${p.unit}).`
+                  `Hi Red Dabba, I'd like to start the ${p.name} (${p.price} for ${p.unit}).`
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
