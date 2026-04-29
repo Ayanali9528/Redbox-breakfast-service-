@@ -3,6 +3,7 @@ import Hero from "@/components/breakfast/Hero";
 import Plans from "@/components/breakfast/Plans";
 import Menu from "@/components/breakfast/Menu";
 import Audience from "@/components/breakfast/Audience";
+import Feedback from "@/components/breakfast/Feedback";
 import Contact from "@/components/breakfast/Contact";
 import WhatsAppFab from "@/components/breakfast/WhatsAppFab";
 import Footer from "@/components/breakfast/Footer";
@@ -15,6 +16,7 @@ const Index = () => (
       <Plans />
       <Menu />
       <Audience />
+      <Feedback />
       <Contact />
     </main>
     <Footer />
