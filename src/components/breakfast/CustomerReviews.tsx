@@ -1,4 +1,4 @@
-import { Star, Play } from "lucide-react";
+import { Star, Play, Quote } from "lucide-react";
 
 // Admin: paste embed URLs here (YouTube Shorts / Instagram Reels / direct mp4)
 const videos: { title: string; embedUrl?: string; poster?: string }[] = [
@@ -144,6 +144,56 @@ const CustomerReviews = () => (
                 </span>
               </figcaption>
             </figure>
+          ))}
+        </div>
+      </div>
+
+      {/* Text Feedback */}
+      <div className="mt-12">
+        <div className="flex items-center gap-2 mb-5">
+          <Quote className="w-4 h-4 fill-secondary text-secondary" />
+          <span className="text-sm font-bold uppercase tracking-wider">Text Reviews</span>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {[
+            {
+              name: "Arjun · AMU Hostel",
+              quote: "Red Dabba saved my semester. Hot breakfast at 8 AM sharp, no mess queue, no cold food. Game changer for hostel life.",
+            },
+            {
+              name: "Priya · PG Near Campus",
+              quote: "As a working student, I never had time to cook. Red Dabba feels like home food delivered to my door. Dal chawal is my comfort fix.",
+            },
+            {
+              name: "Zaid · Hostel 3",
+              quote: "Tried the 3-day trial and instantly upgraded to monthly. The packaging is neat, food is fresh, and the variety keeps it interesting.",
+            },
+            {
+              name: "Sana · BSc Student",
+              quote: "Kadhi chawal tastes exactly like my mom makes it. I recommend Red Dabba to everyone in my hostel wing.",
+            },
+            {
+              name: "Rohit · Engineering",
+              quote: "Affordable, tasty, and reliable. After 8 PM classes, knowing breakfast is sorted removes so much stress.",
+            },
+            {
+              name: "Fatima · AMU",
+              quote: "The chole chawal on weekends is something I genuinely look forward to. Best decision I made this year.",
+            },
+          ].map((t) => (
+            <div
+              key={t.name}
+              className="bg-card rounded-2xl p-5 sm:p-6 border border-border shadow-soft hover:shadow-glow transition-smooth flex flex-col"
+            >
+              <Stars />
+              <p className="text-sm sm:text-base text-foreground leading-relaxed mt-4 flex-1">
+                "{t.quote}"
+              </p>
+              <span className="text-xs sm:text-sm font-semibold text-muted-foreground mt-5">
+                — {t.name}
+              </span>
+            </div>
           ))}
         </div>
       </div>
