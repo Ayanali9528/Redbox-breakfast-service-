@@ -87,6 +87,8 @@
   .shadow-glow { box-shadow: var(--shadow-glow); }
   .shadow-fresh { box-shadow: var(--shadow-fresh); }
   .transition-smooth { transition: var(--transition-smooth); }
+  .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+  .scrollbar-hide::-webkit-scrollbar { display: none; }
 }
 
 @keyframes float {
