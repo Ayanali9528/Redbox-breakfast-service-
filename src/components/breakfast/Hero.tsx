@@ -3,7 +3,7 @@ import hero from "@/assets/hero-breakfast.jpg";
 
 const Hero = () => (
   <section className="relative overflow-hidden bg-sunrise">
-    <div className="container grid lg:grid-cols-2 gap-12 lg:gap-8 items-center py-16 lg:py-24">
+    <div className="container grid lg:grid-cols-2 gap-10 lg:gap-8 items-center py-12 lg:py-16">
       <div className="space-y-7">
         <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-soft text-secondary text-xs font-semibold tracking-wide uppercase">
           <Sparkles className="w-3.5 h-3.5" /> First-time? Get 10% off the trial

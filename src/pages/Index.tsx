@@ -1,9 +1,9 @@
 import Navbar from "@/components/breakfast/Navbar";
 import Hero from "@/components/breakfast/Hero";
-import SpecialMeals from "@/components/breakfast/SpecialMeals";
-import Plans from "@/components/breakfast/Plans";
-import StudentHub from "@/components/breakfast/StudentHub";
 import Menu from "@/components/breakfast/Menu";
+import Plans from "@/components/breakfast/Plans";
+import SpecialMeals from "@/components/breakfast/SpecialMeals";
+import StudentHub from "@/components/breakfast/StudentHub";
 import Audience from "@/components/breakfast/Audience";
 import Feedback from "@/components/breakfast/Feedback";
 import Contact from "@/components/breakfast/Contact";
@@ -15,10 +15,10 @@ const Index = () => (
     <Navbar />
     <main>
       <Hero />
-      <SpecialMeals />
-      <Plans />
-      <StudentHub />
       <Menu />
+      <Plans />
+      <SpecialMeals />
+      <StudentHub />
       <Audience />
       <Feedback />
       <Contact />

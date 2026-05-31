@@ -32,9 +32,9 @@ const usps = [
 ];
 
 const Menu = () => (
-  <section id="menu" className="py-20 lg:py-28 bg-muted/40">
+  <section id="menu" className="py-12 lg:py-16 bg-muted/40">
     <div className="container">
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-20">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mb-10">
         {usps.map(({ icon: Icon, title, desc, tone }) => (
           <div key={title} className="bg-card rounded-3xl p-5 sm:p-7 border border-border shadow-soft">
             <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-2xl grid place-items-center mb-4 sm:mb-5 ${

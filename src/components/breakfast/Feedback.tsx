@@ -61,7 +61,7 @@ const Feedback = () => {
   };
 
   return (
-    <section id="feedback" className="py-20 lg:py-28 bg-muted/40">
+    <section id="feedback" className="py-12 lg:py-16 bg-muted/40">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center mb-12">
           <span className="text-xs font-semibold tracking-widest uppercase text-secondary">Feedback & Ratings</span>

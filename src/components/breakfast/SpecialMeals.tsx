@@ -12,14 +12,14 @@ const meals = [
 ];
 
 const SpecialMeals = () => (
-  <section id="specials" className="py-20 lg:py-28">
+  <section id="specials" className="py-12 lg:py-16 bg-sunrise">
     <div className="container">
-      <div className="max-w-2xl mx-auto text-center mb-12">
-        <span className="text-xs font-semibold tracking-widest uppercase text-primary">Local Special Meals</span>
+      <div className="max-w-2xl mx-auto text-center mb-10">
+        <span className="text-xs font-semibold tracking-widest uppercase text-primary">Local Specials (Single Meals)</span>
         <h2 className="font-display text-4xl md:text-5xl font-bold mt-3">
-          Ghar jaisa <span className="text-primary">desi khaana</span>, har din.
+          Ghar jaisa <span className="text-primary">desi khaana</span>, single plate.
         </h2>
-        <p className="text-muted-foreground mt-4">Hand-picked North Indian classics — cooked fresh, delivered hot.</p>
+        <p className="text-muted-foreground mt-4">No subscription needed — order any single meal, delivered hot.</p>
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">

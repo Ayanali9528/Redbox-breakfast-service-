@@ -1,7 +1,7 @@
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
 const Contact = () => (
-  <section id="contact" className="py-20 lg:py-28 bg-fresh text-secondary-foreground">
+  <section id="contact" className="py-12 lg:py-16 bg-fresh text-secondary-foreground">
     <div className="container grid lg:grid-cols-2 gap-12 items-center">
       <div>
         <span className="text-xs font-semibold tracking-widest uppercase opacity-80">Get in touch</span>

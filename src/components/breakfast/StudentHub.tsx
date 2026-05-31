@@ -39,14 +39,16 @@ const photos = [
 ];
 
 const StudentHub = () => (
-  <section id="student-hub" className="py-20 lg:py-28 bg-sunrise">
+  <section id="student-hub" className="py-12 lg:py-16">
     <div className="container">
-      <div className="max-w-2xl mx-auto text-center mb-12">
-        <span className="text-xs font-semibold tracking-widest uppercase text-secondary">Student Hub</span>
+      <div className="max-w-2xl mx-auto text-center mb-10">
+        <span className="inline-flex items-center gap-1.5 text-xs font-semibold tracking-widest uppercase text-secondary">
+          <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" /> Curated by Red Dabba
+        </span>
         <h2 className="font-display text-4xl md:text-5xl font-bold mt-3">
           Real reels. Real <span className="text-primary">desi breakfasts.</span>
         </h2>
-        <p className="text-muted-foreground mt-4">Tagged by AMU hostlers, PG warriors & early-morning office goers.</p>
+        <p className="text-muted-foreground mt-4">A live feed of student reviews & kitchen highlights — hand-picked weekly.</p>
       </div>
 
       {/* Reels row */}
@@ -100,17 +102,9 @@ const StudentHub = () => (
         </div>
       </div>
 
-      <div className="mt-10 text-center">
-        <a
-          href="https://wa.me/919528328181?text=Hi%20Red%20Dabba%2C%20I%27d%20like%20to%20share%20my%20feedback%20reel."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-smooth"
-        >
-          <Camera className="w-4 h-4" />
-          Share your reel
-        </a>
-      </div>
+      <p className="mt-8 text-center text-xs text-muted-foreground">
+        Gallery curated & updated by the Red Dabba team. New reels added every week.
+      </p>
     </div>
   </section>
 );
