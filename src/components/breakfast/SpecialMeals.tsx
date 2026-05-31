@@ -5,10 +5,10 @@ import kadhi from "@/assets/menu/kadhi-chawal.jpg";
 import chole from "@/assets/menu/chole-chawal.jpg";
 
 const meals = [
-  { name: "Rajma Chawal", tag: "Comfort Food Special", desc: "Slow-cooked kidney beans in rich tomato gravy with steamed basmati rice.", price: "₹79", img: rajma },
-  { name: "Dal Chawal", tag: "Homestyle Simple", desc: "Tadka dal with a dollop of ghee, served over fluffy white rice.", price: "₹69", img: dal },
-  { name: "Kadhi Chawal", tag: "Authentic Desi Taste", desc: "Tangy yogurt kadhi with crispy pakoras, paired with basmati rice.", price: "₹79", img: kadhi },
-  { name: "Chole Chawal", tag: "Spicy & Flavorful", desc: "Punjabi-style chickpea masala with onion, lemon & steamed rice.", price: "₹79", img: chole },
+  { name: "Rajma Chawal", tag: "Comfort Food Special", desc: "Slow-cooked kidney beans in rich tomato gravy with steamed basmati rice.", price: "₹49", img: rajma },
+  { name: "Dal Chawal", tag: "Homestyle Simple", desc: "Tadka dal with a dollop of ghee, served over fluffy white rice.", price: "₹49", img: dal },
+  { name: "Kadhi Chawal", tag: "Authentic Desi Taste", desc: "Tangy yogurt kadhi with crispy pakoras, paired with basmati rice.", price: "₹49", img: kadhi },
+  { name: "Chole Chawal", tag: "Spicy & Flavorful", desc: "Punjabi-style chickpea masala with onion, lemon & steamed rice.", price: "₹49", img: chole },
 ];
 
 const SpecialMeals = () => (
