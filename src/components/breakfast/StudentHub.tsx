@@ -102,17 +102,9 @@ const StudentHub = () => (
         </div>
       </div>
 
-      <div className="mt-10 text-center">
-        <a
-          href="https://wa.me/919528328181?text=Hi%20Red%20Dabba%2C%20I%27d%20like%20to%20share%20my%20feedback%20reel."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-foreground text-background px-6 py-3 rounded-full text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-smooth"
-        >
-          <Camera className="w-4 h-4" />
-          Share your reel
-        </a>
-      </div>
+      <p className="mt-8 text-center text-xs text-muted-foreground">
+        Gallery curated & updated by the Red Dabba team. New reels added every week.
+      </p>
     </div>
   </section>
 );
