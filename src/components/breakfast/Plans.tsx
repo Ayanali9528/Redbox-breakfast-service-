@@ -47,7 +47,7 @@ const plans: Plan[] = [
 ];
 
 const Plans = () => (
-  <section id="plans" className="py-20 lg:py-28">
+  <section id="plans" className="py-12 lg:py-16">
     <div className="container">
       <div className="max-w-2xl mx-auto text-center mb-14">
         <span className="text-xs font-semibold tracking-widest uppercase text-primary">Subscription Plans</span>

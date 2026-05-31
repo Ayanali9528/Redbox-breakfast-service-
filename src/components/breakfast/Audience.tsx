@@ -34,7 +34,7 @@ const Audience = () => {
   const Icon = current.icon;
 
   return (
-    <section id="audience" className="py-20 lg:py-28">
+    <section id="audience" className="py-12 lg:py-16">
       <div className="container">
         <div className="max-w-2xl mx-auto text-center mb-12">
           <span className="text-xs font-semibold tracking-widest uppercase text-secondary">Who it's for</span>
