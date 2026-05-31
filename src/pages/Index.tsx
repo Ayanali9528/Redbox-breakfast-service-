@@ -4,24 +4,18 @@ import Menu from "@/components/breakfast/Menu";
 import Plans from "@/components/breakfast/Plans";
 import SpecialMeals from "@/components/breakfast/SpecialMeals";
 import StudentHub from "@/components/breakfast/StudentHub";
-import Audience from "@/components/breakfast/Audience";
-import Feedback from "@/components/breakfast/Feedback";
-import Contact from "@/components/breakfast/Contact";
 import WhatsAppFab from "@/components/breakfast/WhatsAppFab";
 import Footer from "@/components/breakfast/Footer";
 
 const Index = () => (
-  <div className="min-h-screen bg-background">
+  <div className="min-h-screen flex flex-col bg-background overflow-x-hidden">
     <Navbar />
-    <main>
-      <Hero />
-      <Menu />
-      <Plans />
-      <SpecialMeals />
-      <StudentHub />
-      <Audience />
-      <Feedback />
-      <Contact />
+    <main className="flex-1 flex flex-col">
+      <section className="w-full"><Hero /></section>
+      <section className="w-full"><Menu /></section>
+      <section className="w-full"><Plans /></section>
+      <section className="w-full"><SpecialMeals /></section>
+      <section className="w-full"><StudentHub /></section>
     </main>
     <Footer />
     <WhatsAppFab />
