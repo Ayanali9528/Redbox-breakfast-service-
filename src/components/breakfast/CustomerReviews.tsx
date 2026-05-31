@@ -1,4 +1,4 @@
-import { Star, Play } from "lucide-react";
+import { Star, Play, Quote } from "lucide-react";
 
 // Admin: paste embed URLs here (YouTube Shorts / Instagram Reels / direct mp4)
 const videos: { title: string; embedUrl?: string; poster?: string }[] = [
