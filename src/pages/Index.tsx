@@ -3,7 +3,7 @@ import Hero from "@/components/breakfast/Hero";
 import Menu from "@/components/breakfast/Menu";
 import Plans from "@/components/breakfast/Plans";
 import SpecialMeals from "@/components/breakfast/SpecialMeals";
-import StudentHub from "@/components/breakfast/StudentHub";
+import CustomerReviews from "@/components/breakfast/CustomerReviews";
 import WhatsAppFab from "@/components/breakfast/WhatsAppFab";
 import Footer from "@/components/breakfast/Footer";
 
@@ -15,7 +15,7 @@ const Index = () => (
       <section className="w-full"><Menu /></section>
       <section className="w-full"><Plans /></section>
       <section className="w-full"><SpecialMeals /></section>
-      <section className="w-full"><StudentHub /></section>
+      <section className="w-full"><CustomerReviews /></section>
     </main>
     <Footer />
     <WhatsAppFab />
