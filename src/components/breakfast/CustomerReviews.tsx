@@ -4,28 +4,7 @@ import { z } from "zod";
 import { toast } from "sonner";
 
 
-const photos = [
-  {
-    name: "Riya · AMU",
-    quote: "Fresh, hot & on time every single morning. Total game-changer!",
-    img: "https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=600&h=600&fit=crop",
-  },
-  {
-    name: "Karan · Hostel 4",
-    quote: "Ghar jaisa swaad. Mess se 10x better, seriously.",
-    img: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&h=600&fit=crop",
-  },
-  {
-    name: "Aman · PG",
-    quote: "Packaging neat, taste perfect. Worth every rupee.",
-    img: "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&h=600&fit=crop",
-  },
-  {
-    name: "Neha · BTech",
-    quote: "Daily 8 AM par garam paratha. Mera favorite!",
-    img: "https://images.unsplash.com/photo-1592415486689-125cbbfcbee2?w=600&h=600&fit=crop",
-  },
-];
+
 
 type TextReview = { name: string; quote: string };
 
