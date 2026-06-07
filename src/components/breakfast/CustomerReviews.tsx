@@ -86,45 +86,11 @@ const CustomerReviews = () => {
             Real stories from our <span className="text-primary">morning tribe.</span>
           </h2>
           <p className="text-muted-foreground mt-4">
-            A curated gallery of student videos & photo reviews — updated by the Red Dabba team.
+            A curated gallery of student reviews — updated by the Red Dabba team.
           </p>
         </div>
 
 
-        {/* Photo Feedback */}
-        <div>
-          <div className="flex items-center gap-2 mb-5">
-            <Star className="w-4 h-4 fill-secondary text-secondary" />
-            <span className="text-sm font-bold uppercase tracking-wider">Photo Reviews</span>
-          </div>
-
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
-            {photos.map((p) => (
-              <figure
-                key={p.name}
-                className="bg-card rounded-2xl overflow-hidden border border-border shadow-soft hover:shadow-glow transition-smooth hover:-translate-y-1 flex flex-col"
-              >
-                <div className="aspect-square overflow-hidden bg-muted">
-                  <img
-                    src={p.img}
-                    alt={`Photo review by ${p.name}`}
-                    loading="lazy"
-                    className="w-full h-full object-cover hover:scale-105 transition-smooth"
-                  />
-                </div>
-                <figcaption className="p-3 sm:p-4 flex flex-col gap-2 flex-1">
-                  <Stars />
-                  <p className="text-[11px] sm:text-sm text-foreground leading-snug line-clamp-3">
-                    "{p.quote}"
-                  </p>
-                  <span className="text-[10px] sm:text-xs font-semibold text-muted-foreground mt-auto">
-                    — {p.name}
-                  </span>
-                </figcaption>
-              </figure>
-            ))}
-          </div>
-        </div>
 
         {/* Text Feedback */}
         <div className="mt-12">
