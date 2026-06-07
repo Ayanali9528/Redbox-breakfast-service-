@@ -9,7 +9,7 @@ const Hero = () => (
           <Sparkles className="w-3.5 h-3.5" /> First-time? Get 10% off the trial
         </span>
         <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-black leading-[0.95] text-foreground">
-          Fresh, hygienic & <span className="text-primary">pocket-friendly</span> breakfast.
+          Fresh, hygienic & <span className="text-primary">pocket-friendly</span> food.
           <span className="block text-secondary">Delivered fast.</span>
         </h1>
         <p className="text-lg text-muted-foreground max-w-xl">
