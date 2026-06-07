@@ -1,26 +1,8 @@
 import { useEffect, useState, type FormEvent } from "react";
-import { Star, Play, Quote, Send } from "lucide-react";
+import { Star, Quote, Send } from "lucide-react";
 import { z } from "zod";
 import { toast } from "sonner";
 
-// Admin: paste embed URLs here (YouTube Shorts / Instagram Reels / direct mp4)
-const videos: { title: string; embedUrl?: string; poster?: string }[] = [
-  {
-    title: "Student Review — AMU Hostel",
-    embedUrl: "",
-    poster: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=1066&fit=crop",
-  },
-  {
-    title: "Unboxing Red Dabba",
-    embedUrl: "",
-    poster: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=600&h=1066&fit=crop",
-  },
-  {
-    title: "Morning Routine with Red Dabba",
-    embedUrl: "",
-    poster: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&h=1066&fit=crop",
-  },
-];
 
 const photos = [
   {
@@ -129,53 +111,6 @@ const CustomerReviews = () => {
           </p>
         </div>
 
-        {/* Video Feedback */}
-        <div className="mb-12">
-          <div className="flex items-center gap-2 mb-5">
-            <Play className="w-4 h-4 fill-primary text-primary" />
-            <span className="text-sm font-bold uppercase tracking-wider">Video Reviews</span>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {videos.map((v) => (
-              <div
-                key={v.title}
-                className="bg-card rounded-3xl overflow-hidden border border-border shadow-soft hover:shadow-glow transition-smooth"
-              >
-                <div className="aspect-[9/16] bg-foreground/5 relative overflow-hidden">
-                  {v.embedUrl ? (
-                    <iframe
-                      src={v.embedUrl}
-                      title={v.title}
-                      loading="lazy"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      className="w-full h-full"
-                    />
-                  ) : (
-                    <>
-                      <img
-                        src={v.poster}
-                        alt={v.title}
-                        loading="lazy"
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-foreground/70 via-foreground/10 to-transparent" />
-                      <div className="absolute inset-0 grid place-items-center">
-                        <div className="w-14 h-14 rounded-full bg-background/90 grid place-items-center shadow-glow">
-                          <Play className="w-6 h-6 fill-primary text-primary ml-0.5" />
-                        </div>
-                      </div>
-                    </>
-                  )}
-                </div>
-                <div className="p-4 text-center">
-                  <h4 className="font-display text-lg font-bold leading-tight">{v.title}</h4>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Photo Feedback */}
         <div>
