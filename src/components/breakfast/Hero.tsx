@@ -1,5 +1,6 @@
 import { ArrowRight, Sparkles, ShieldCheck, Clock } from "lucide-react";
-import hero from "@/assets/hero-breakfast.jpg";
+import heroAsset from "@/assets/hero-food.png.asset.json";
+const hero = heroAsset.url;
 
 const Hero = () => (
   <section className="relative overflow-hidden bg-sunrise">
